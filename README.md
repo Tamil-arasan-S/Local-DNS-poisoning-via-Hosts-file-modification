@@ -3,8 +3,7 @@ This a documentation of performing the local DNS poisoning attack via modifying 
 
 This attack was performed on a controlled LAN network. We all know about the DNS concepts which acts as the central hub for the identification of human-readable domain names to it's respective IP address.
 
-<img width="924" height="435" alt="image" src="https://github.com/user-attachments/assets/173f245e-0d1c-4f5c-a347-db3c9caecdbe" />
-
+<img width="1022" height="327" alt="image" src="https://github.com/user-attachments/assets/cf936967-e930-469e-ae33-0ac2c8e4bdd3" />
 
 ## 🔒 MITRE ATT&CK Mapping
 
