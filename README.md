@@ -11,12 +11,11 @@ This attack was performed on a controlled LAN network. We all know about the DNS
 * **Tactical Goal:** Defense Evasion / Privilege Escalation
 * **Technique:** [T1562.006 - Impair Defenses: Modify Name Resolution](https://attack.mitre.org/techniques/T1562/006/)
 
-## The methodology
+**The methodology**
 >>The victim machine is compromised by the tcp_reverse_shell payload using the metasploit framework
 >>After the compromise of the machine, we need the administrative privilege to modify the Hosts file
 >>The privilege escalation is done by the post exploit module post/multi/recon/local_exploit_suggester
->>Hosts file will the modified and the attack will be succeeded
-
+>>Hosts file will the modified and the attack will be succeeded(Here we'll be looping back a particular domain into our local host, so the site is not accessible)
 
 
 **The PoC**
@@ -56,6 +55,9 @@ Hosts file location: /Windows/System32/drivers/etc/Hosts
 
 <img width="986" height="297" alt="image" src="https://github.com/user-attachments/assets/c44eb22a-fbcb-4ffd-95f3-e6d8d4de8c06" />
 
+>By adding the domain in the 127.0.0.1 will make it to loopback to the local host and can't be accessed.
+
 >By the [download] and [upload] command the Hosts file can be modified and the Local DNS can be poisoned.
+
 
 
