@@ -3,23 +3,8 @@ This a documentation of performing the local DNS poisoning attack via modifying 
 
 This attack was performed on a controlled LAN network. We all know about the DNS concepts which acts as the central hub for the identification of human-readable domain names to it's respective IP address.
 
-User searching the www.domain.com  
-            |
-            |
-            |
-           \ /
-1)Checks the Hosts file in the system[yes]--->Retrives the IP address loads the site 
-            |
-            |[no]
-            |
-           \ /
-2)Checks the DNS cache of the browser[yes]--->Retrives the IP address loads the site
-            |
-            |[no]
-            |
-           \ /
-3)The request reaches the DNS resolver and
-forward it to the DNS server to load the site
+<img width="924" height="435" alt="image" src="https://github.com/user-attachments/assets/173f245e-0d1c-4f5c-a347-db3c9caecdbe" />
+
 
 ## 🔒 MITRE ATT&CK Mapping
 
