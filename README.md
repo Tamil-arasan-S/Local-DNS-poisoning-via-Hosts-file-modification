@@ -19,7 +19,7 @@ This attack was performed on a controlled LAN network. We all know about the DNS
 
 
 
- * ** The PoC **
+**The PoC**
 
 >This attack will be performed in a controlled local network, so both the Attacker and the Victim's machine will be in the same network
 <img width="920" height="472" alt="image" src="https://github.com/user-attachments/assets/aa4559bc-ec25-46d9-a9e1-928b53805027" />
